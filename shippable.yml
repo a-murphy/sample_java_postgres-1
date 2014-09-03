@@ -9,5 +9,6 @@ script:
  - gradle clean build
  - gradle test
  - gradle cobertura
+ 
 notifications:
  email: false
