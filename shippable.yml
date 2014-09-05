@@ -10,5 +10,6 @@ script:
  - gradle test
  - gradle cobertura
  
+ 
 notifications:
  email: false
