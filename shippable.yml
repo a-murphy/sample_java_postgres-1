@@ -11,5 +11,3 @@ script:
  
 notifications:
  email: false
-
-archive: true
