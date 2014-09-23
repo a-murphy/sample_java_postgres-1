@@ -12,3 +12,4 @@ script:
 notifications:
  email: false
 
+build_image: shippabletest/minv3
