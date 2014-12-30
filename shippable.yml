@@ -4,6 +4,10 @@ jdk:
  - oraclejdk7
  - openjdk6
  - openjdk7
+ 
+before_script:
+ - git config --list
+
 script:
  - gradle clean build
  - gradle test
