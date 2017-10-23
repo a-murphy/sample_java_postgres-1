@@ -1,18 +1,17 @@
 language: java
 
 jdk:
- - oraclejdk7
- - openjdk6
  - openjdk7
  
-before_script:
- - git config --list
-
-script:
- - gradle clean build
- - gradle test
- - gradle cobertura
- 
-notifications:
- email: false
+build:
+  ci:
+   - ls $GRADLE_HOME/caches
+   - git config --list
+   - gradle clean build
+   - gradle test
+   - gradle cobertura
+   - ls $GRADLE_HOME/caches
+ cache: true
+ cache_dir_list:
+   - $GRADLE_HOME/caches/build-cache-*
 
