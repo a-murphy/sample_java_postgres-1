@@ -11,7 +11,7 @@ build:
    - gradle test
    - gradle cobertura
    - ls $GRADLE_HOME/caches
- cache: true
- cache_dir_list:
+  cache: true
+  cache_dir_list:
    - $GRADLE_HOME/caches/build-cache-*
 
