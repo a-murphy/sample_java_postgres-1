@@ -12,5 +12,5 @@ build:
    - ls ~/.gradle/caches
   cache: true
   cache_dir_list:
-   - ~/.gradle/caches/build-cache-*
+   - ~/.gradle/caches*
 
