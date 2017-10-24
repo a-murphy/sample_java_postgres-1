@@ -6,11 +6,11 @@ jdk:
 build:
   ci:
  #  - ls .gradle/caches
-   - gradle clean build --build-cache
+   - gradle  --build-cache clean build
    - gradle test
    - gradle cobertura
    - ls .gradle
   cache: true
   cache_dir_list:
-   - .gradle/caches/build-cache-*
+   - $SHIPPABLE_BUILD_DIR/.gradle/caches/build-cache-*
 
