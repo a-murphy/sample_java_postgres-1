@@ -5,7 +5,7 @@ jdk:
  
 build:
   ci:
-   - ls ~/.gradle/caches
+ #  - ls ~/.gradle/caches
    - ./gradlew  --build-cache clean build
    - ./gradlew test
    - ./gradlew cobertura
