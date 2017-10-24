@@ -9,8 +9,8 @@ build:
    - gradle clean build --build-cache
    - gradle test
    - gradle cobertura
-   - gradle --project-cache-dir
+   - ls .gradle
   cache: true
   cache_dir_list:
-   - $(gradle --project-cache-dir)/caches/build-cache-*
+   - .gradle/caches/build-cache-*
 
