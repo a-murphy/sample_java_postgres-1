@@ -6,9 +6,9 @@ jdk:
 build:
   ci:
  #  - ls .gradle/caches
-   - gradle  --build-cache clean build
-   - gradle test
-   - gradle cobertura
+   - ./gradlew  --build-cache clean build
+   - ./gradlew test
+   - ./gradlew cobertura
    - ls .gradle
   cache: true
   cache_dir_list:
