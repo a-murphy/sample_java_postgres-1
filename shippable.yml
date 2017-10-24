@@ -5,13 +5,13 @@ jdk:
  
 build:
   ci:
-   - ls $GRADLE_HOME/caches
+   - ls .gradle/caches
    - git config --list
    - gradle clean build
    - gradle test
    - gradle cobertura
-   - ls $GRADLE_HOME/caches
+   - ls .gradle/caches
   cache: true
   cache_dir_list:
-   - $GRADLE_HOME/caches/build-cache-*
+   - $(gradle --project-cache-dir)/caches/build-cache-*
 
