@@ -9,7 +9,7 @@ build:
    - ./gradlew  --build-cache clean build
    - ./gradlew test
    - ./gradlew cobertura
-   - ls .gradle
+   - ls ~/.gradle
   cache: true
   cache_dir_list:
    - $SHIPPABLE_BUILD_DIR/.gradle/caches/build-cache-*
