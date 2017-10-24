@@ -6,7 +6,6 @@ jdk:
 build:
   ci:
  #  - ls .gradle/caches
-   - git config --list
    - gradle clean build
    - gradle test
    - gradle cobertura
