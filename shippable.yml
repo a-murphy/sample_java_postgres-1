@@ -9,7 +9,7 @@ build:
    - ./gradlew  --build-cache clean build
    - ./gradlew test
    - ./gradlew cobertura
-   - ls ~/.gradle/cahces
+   - ls ~/.gradle/caches
   cache: true
   cache_dir_list:
    - ~/.gradle/caches/build-cache-*
